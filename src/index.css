@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 220 12% 16%;
+
+    --card: 40 15% 99%;
+    --card-foreground: 220 12% 16%;
+
+    --popover: 40 15% 99%;
+    --popover-foreground: 220 12% 16%;
+
+    --primary: 155 22% 38%;
+    --primary-foreground: 40 20% 97%;
+
+    --secondary: 40 10% 93%;
+    --secondary-foreground: 220 12% 16%;
+
+    --muted: 40 10% 93%;
+    --muted-foreground: 220 8% 52%;
+
+    --accent: 155 22% 38%;
+    --accent-foreground: 40 20% 97%;
+
+    --destructive: 0 55% 52%;
+    --destructive-foreground: 40 20% 97%;
+
+    --border: 40 12% 89%;
+    --input: 40 12% 89%;
+    --ring: 155 22% 38%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 40 15% 96%;
+    --sidebar-foreground: 220 12% 16%;
+    --sidebar-primary: 155 22% 38%;
+    --sidebar-primary-foreground: 40 20% 97%;
+    --sidebar-accent: 40 10% 93%;
+    --sidebar-accent-foreground: 220 12% 16%;
+    --sidebar-border: 40 12% 89%;
+    --sidebar-ring: 155 22% 38%;
+
+    --success: 155 30% 42%;
+    --success-foreground: 40 20% 97%;
+    --warning: 38 70% 55%;
+    --warning-foreground: 220 12% 16%;
+  }
+
+  .dark {
+    --background: 220 12% 10%;
+    --foreground: 40 10% 90%;
+    --card: 220 12% 12%;
+    --card-foreground: 40 10% 90%;
+    --popover: 220 12% 12%;
+    --popover-foreground: 40 10% 90%;
+    --primary: 155 25% 48%;
+    --primary-foreground: 220 12% 10%;
+    --secondary: 220 10% 18%;
+    --secondary-foreground: 40 10% 90%;
+    --muted: 220 10% 18%;
+    --muted-foreground: 220 8% 60%;
+    --accent: 155 25% 48%;
+    --accent-foreground: 220 12% 10%;
+    --destructive: 0 55% 52%;
+    --destructive-foreground: 40 20% 97%;
+    --border: 220 10% 20%;
+    --input: 220 10% 20%;
+    --ring: 155 25% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: 'DM Mono', ui-monospace, monospace;
+  }
+}
