@@ -4,7 +4,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(() => ({
-  base: "/Fitness-app/", // 👈 REQUIRED for GitHub Pages (repo name)
+  // REQUIRED for GitHub Pages (repo name is Fitness-app)
+  base: "/Fitness-app/",
 
   plugins: [react()],
 
@@ -14,6 +15,7 @@ export default defineConfig(() => ({
     },
   },
 
+  // Local dev only (does NOT affect GitHub Pages)
   server: {
     host: "::",
     port: 8080,
